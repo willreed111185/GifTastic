@@ -54,9 +54,6 @@ function animateGif(id){
         $("#"+id).attr("src", $("#"+id).attr("data-still"));
         $("#"+id).attr("data-state", "still");
       }
-
-
-
 }
 
 $("#buttonBox").on("click",".gifButton",function(){
