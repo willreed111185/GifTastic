@@ -44,6 +44,7 @@ function searchGIF(newGif){
 
 function animateGif(id){
 	var currentState = $("#"+id).attr("data-state");
+<<<<<<< HEAD
 	if (currentState === "still") {
 	   $("#"+id).attr("src", $("#"+id).attr("data-animate"));
 	   $("#"+id).attr("data-state", "animate");
@@ -51,6 +52,16 @@ function animateGif(id){
 	   $("#"+id).attr("src", $("#"+id).attr("data-still"));
 	   $("#"+id).attr("data-state", "still");
 	}
+=======
+	console.log("currentState ",currentState);
+	 if (currentState === "still") {
+        $("#"+id).attr("src", $("#"+id).attr("data-animate"));
+        $("#"+id).attr("data-state", "animate");
+      } else {
+        $("#"+id).attr("src", $("#"+id).attr("data-still"));
+        $("#"+id).attr("data-state", "still");
+      }
+>>>>>>> ff0ba09bd527015f7b0f9e2a7cd63eb9d4782423
 }
 
 $("#buttonBox").on("click",".gifButton",function(){
