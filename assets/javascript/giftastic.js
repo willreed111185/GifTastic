@@ -12,7 +12,7 @@ function renderGifBtns(){
 }
 
 function renderGifs(KeyWord){
-	var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q="+KeyWord+"&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q="+KeyWord+"&limit=10";//added https to resove deployment issue
 	$.ajax({
 	    url: queryURL,
 	    method: "GET"

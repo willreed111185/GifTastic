@@ -8,9 +8,6 @@ body {
 * {
   box-sizing: border-box;
 }
-.button{
-  display: inline-block;
-}
 #add-movie{
   border:none;
 }
